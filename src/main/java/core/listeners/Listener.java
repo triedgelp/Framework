@@ -2,36 +2,24 @@ package core.listeners;
 
 import core.ExtentLogger;
 import core.ExtentReport;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.*;
 
 import java.io.IOException;
 
 
-public abstract class Listener implements ITestContext, ITestListener {
+public class Listener implements ITestListener, ISuiteListener {
 
-
-    /**
-     * Triggered on finish
-     *
-     * @param instance : {@link ITestContext}
-     */
     @Override
-    public void onFinish(ITestContext instance) {
+    public void onFinish(ISuite suite) {
         try{
             ExtentReport.finishReport();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    /**
-     * Triggered on start
-     *
-     * @param instance : {@link ITestContext}
-     */
+
     @Override
-    public void onStart(ITestContext instance) {
+    public void onStart(ISuite suite) {
         try {
             ExtentReport.buildReport();
         } catch (IOException e) {
@@ -57,7 +45,7 @@ public abstract class Listener implements ITestContext, ITestListener {
      */
     @Override
     public void onTestFailure(ITestResult result) {
-        ExtentLogger.fail(result.getMethod().getMethodName() + "has failed");
+        ExtentLogger.fail(result.getMethod().getMethodName() + " has failed");
     }
     /**
      * Triggered on test success
@@ -66,7 +54,7 @@ public abstract class Listener implements ITestContext, ITestListener {
      */
     @Override
     public void onTestSkipped(ITestResult result) {
-        ExtentLogger.skip(result.getMethod().getMethodName() + "has been skipped");
+        ExtentLogger.skip(result.getMethod().getMethodName() + " has been skipped");
     }
     /**
      * Triggered on test success
@@ -75,7 +63,21 @@ public abstract class Listener implements ITestContext, ITestListener {
      */
     @Override
     public void onTestSuccess(ITestResult result) {
-        ExtentLogger.fail(result.getMethod().getMethodName() + "has passed");
+        ExtentLogger.fail(result.getMethod().getMethodName() + " has passed");
+    }
+    @Override
+    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+        //TODO
+    }
+
+    @Override
+    public void onStart(ITestContext context) {
+        //TODO
+    }
+
+    @Override
+    public void onFinish(ITestContext context) {
+        //TODO
     }
 
 }

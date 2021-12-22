@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b56ffd84-5d59-430b-85bd-1321032aff30" name="Changes" comment="" />
+    <list default="true" id="b56ffd84-5d59-430b-85bd-1321032aff30" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Nueva carpeta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Nueva carpeta.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/listeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/listeners/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/listeners/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/listeners/Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -30,6 +45,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager">
+    <configuration name="C:/Users/rosas/Desktop/Repo/Framework/src/main/resources/TestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Nueva carpeta" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/TestRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/rosas/Desktop/Repo/Framework/src/main/resources/TestRunner.xml" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,5 +72,16 @@
       <updated>1640158146971</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
