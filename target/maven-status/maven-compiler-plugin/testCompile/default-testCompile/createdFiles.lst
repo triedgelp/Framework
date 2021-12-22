@@ -1,0 +1,9 @@
+pageFactory\LoginPO.class
+tests\MyFilesTest.class
+pageFactory\MyFilesPO.class
+pageFactory\ActionsPO.class
+pageFactory\VismePO.class
+tests\BaseTest.class
+pageFactory\BasePOM.class
+tests\AccountSettingsTest.class
+pageFactory\DashboardPO.class

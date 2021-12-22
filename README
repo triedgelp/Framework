@@ -1,0 +1,24 @@
+#<h1 align="center">Introduction</h1>
+
+#<h2 align="center">Getting started</h1>
+Setup:
+1.Java JDK 8
+2.Intellij for easy coding, building and testing
+3.Maven(for command line run)
+4-TestNG
+5-Selenium
+
+## Install
+
+
+
+## Usage
+
+Execute te TestNG suite called:
+
+TestRunner.xml
+
+
+## Run tests
+
+## Captures

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="tests.AccountSettingsTest">
+        <methods>
+          <include name="removeUsers"/>
+          <include name="afterTest"/>
+          <include name="createUsers" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.AccountSettingsTest -->
+      <class name="tests.MyFilesTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="createImage"/>
+          <include name="createFolder"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.MyFilesTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
