@@ -1,5 +1,6 @@
 package pageFactory;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,12 +9,12 @@ import java.util.List;
 
 public class ActionsPO extends BasePOM{
 
-    @FindBy(linkText = "Add Member")
+    @FindBy(linkText = "Agregar miembro")//"Add Member"
     WebElement addMember;
     @FindBy(css = "input[class='el-input__inner']")
     List<WebElement> inputs;
     @FindBy(css = "[class='el-button el-button--primary']")
-    List<WebElement> saveMember;
+    WebElement saveMember;
     @FindBy(css = "[class='remove-invite']")
     List<WebElement> removeUsers;
     @FindBy(css = "[class='el-table_1_column_2   el-table__cell']")
@@ -33,14 +34,14 @@ public class ActionsPO extends BasePOM{
     }
 
     public void saveTeamMember() {
-        click(saveMember.get(1));
+        click(saveMember);
+        implcitlyWait();
     }
 
-    public void createNewMember(String name, String mail){
+    public void createNewMember(String name, String mail) throws InterruptedException {
         onWaitSend(inputs.get(0), name);
         onWaitSend(inputs.get(1), mail);
-        click(saveMember.get(1));
-        implcitlyWait();
+        saveTeamMember();
     }
 
     public boolean verifyUserInGrid(String value){
@@ -54,14 +55,18 @@ public class ActionsPO extends BasePOM{
     }
 
     public void removeUsers(){
-        for(int i=1;i < removeUsers.size();i++ ){
-            click(removeUsers.get(i));
+        implcitlyWait();
+        moveToElement(removeUsers,1);
+        for (WebElement index : removeUsers) {
+            click(index);
             click(confirmRemoval);
-            waitElementVisible(removeUsers.get(i));
+            implcitlyWait();
         }
     }
 
     public int verifyAmoutOfUsers(){
+
+        waitElementsNotVisible(removeUsers);
         int value = listOfUsers.size();
         return value;
     }

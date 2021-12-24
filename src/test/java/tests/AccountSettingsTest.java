@@ -23,7 +23,7 @@ public class AccountSettingsTest extends BaseTest {
         loginPage.doLogin();
     }
     @Test(priority = 1,description = "First Test",dataProvider = "addedUsers", dataProviderClass = Data.class)
-    public void createUsers(String userName, String userMail) {
+    public void createUsers(String userName, String userMail) throws InterruptedException {
         this.dashboardPage.selectManage();
         this.manageTeamPage.addUser();
         this.manageTeamPage.createNewMember(userName,userMail);
@@ -31,7 +31,7 @@ public class AccountSettingsTest extends BaseTest {
         Assert.assertTrue(manageTeamPage.verifyUserInGrid(userMail),"User is not displayed in the grid!");
     }
 
-    @Test(priority = 2,description = "First Test")
+    @Test(priority = 2,description = "Second Test")
     public void removeUsers() {
         this.dashboardPage.selectManage();
         this.manageTeamPage.removeUsers();

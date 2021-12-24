@@ -26,7 +26,7 @@ public class MyFilesTest extends BaseTest{
     }
 
     @Test(description = "First Test")
-    public void createFolder() {
+    public void createFolder() throws InterruptedException {
         this.dashboardPage.selectTab();
         this.myFilesPage.selectCreateFolder(2);
         Assert.assertTrue(myFilesPage.verifyAlertMessage().equals("Folder with this name already exists!"),"Error message is not displayed/correct");

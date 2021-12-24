@@ -24,17 +24,10 @@ public class BaseTest {
     private static ExtentReports extent;
     public static ExtentTest test;
 
-    /*@BeforeSuite(alwaysRun = true)
-    public void test() throws IOException {
-        ExtentReport.buildReport();
-
-    }*/
-
     @BeforeMethod(alwaysRun = true)
     @Parameters("browser")
     public void beforeTest( String browser) {
         driver = new Driver(browser);
-        //ExtentReport.createTest(m.getName());
         vismeHome = new VismePO(driver.getDriver());
     }
 
@@ -44,10 +37,6 @@ public class BaseTest {
         vismeHome.dispose();
     }
 
-    /*@AfterSuite(alwaysRun = true)
-    public void afterSuite(){
-        extent.flush();
-    }*/
 
     /**
      * Get the home page.

@@ -67,10 +67,9 @@ public class MyFilesPO extends BasePOM{
         driver.switchTo().frame(0);
         return this.folderExists.isDisplayed();
     }
-    public String verifyAlertMessage(){
-        implcitlyWait();
+    public String verifyAlertMessage() throws InterruptedException {
+        Thread.sleep(5000);
         gracefullyWait(error);
-        ExtentLogger.pass("Al final lo obtubeee to Iframe");
         return error.getText();
     }
 }

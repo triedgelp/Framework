@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BasePOM  {
@@ -44,7 +46,10 @@ public class BasePOM  {
 
     public void waitElementVisible(WebElement element) {
         getWait().until(ExpectedConditions.visibilityOf(element));
+    }
 
+    public void waitElementsNotVisible(List<WebElement> element) {
+        getWait().until(ExpectedConditions.invisibilityOfAllElements(element));
     }
 
     public void click(WebElement element) {
@@ -55,6 +60,13 @@ public class BasePOM  {
     public void onWaitSend(WebElement element, String value) {
         waitElementVisible(element);
         element.sendKeys(value);
+    }
+
+    public void moveToElement(List<WebElement> element, int i) {
+        Actions actions = new Actions(getDriver());
+        actions.moveToElement(element.get(i));
+        actions.perform();
+        waitElementVisible(element.get(i));
     }
 
     public void gracefullyWait(WebElement element){

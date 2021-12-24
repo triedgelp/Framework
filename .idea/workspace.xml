@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b56ffd84-5d59-430b-85bd-1321032aff30" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Nueva carpeta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Nueva carpeta.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/spark.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/listeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/listeners/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageFactory/ActionsPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageFactory/ActionsPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageFactory/BasePOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageFactory/BasePOM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageFactory/MyFilesPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageFactory/MyFilesPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AccountSettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AccountSettingsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MyFilesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MyFilesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/core/listeners/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/core/listeners/Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/ActionsPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/ActionsPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/BasePOM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/BasePOM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageFactory/MyFilesPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageFactory/MyFilesPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/AccountSettingsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/AccountSettingsTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/MyFilesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/MyFilesTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,6 +48,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="22dCazPJfbgY8qpHeovErCkiMJd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,7 +61,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/rosas/Desktop/Repo/Framework/src/main/resources/TestRunner.xml">
+    <configuration name="AccountSettingsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Nueva carpeta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AccountSettingsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/rosas/Desktop/Repo/Framework/src/main/resources/TestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Nueva carpeta" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/TestRunner.xml" />
@@ -59,6 +92,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/rosas/Desktop/Repo/Framework/src/main/resources/TestRunner.xml" />
+        <item itemvalue="TestNG.AccountSettingsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -83,5 +117,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pageFactory/VismePO.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

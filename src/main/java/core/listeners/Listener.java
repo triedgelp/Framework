@@ -63,7 +63,7 @@ public class Listener implements ITestListener, ISuiteListener {
      */
     @Override
     public void onTestSuccess(ITestResult result) {
-        ExtentLogger.fail(result.getMethod().getMethodName() + " has passed");
+        ExtentLogger.pass(result.getMethod().getMethodName() + " has passed");
     }
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
